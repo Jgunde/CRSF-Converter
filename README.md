@@ -1,9 +1,11 @@
 # CRSF-Converter
 
-This script will read in the CRSF protocol and output the PPM protocol.
+This project uses an Arduino to read in the CRSF protocol and output the PPM protocol.
 It will also read in the LTM (Lightweight Telemetry) protocol and send telemetry data back through CRSF.
 
 I created this so I could use an ExpressLRS receiver with an old Naze32 flight controller.
+
+**If this project helped you in any way, please consider supporting my work through a [PayPal donation](paypal.me/jacobgunderson).**
 
 
 ## Hardware Setup
