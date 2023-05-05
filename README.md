@@ -32,3 +32,18 @@ The Arduino communicates at 115200 with the CRSF receiver.
 
 The Arduino communicates at 9600 baud with the flight controller to receive LTM (telemetry).  
 &nbsp;&nbsp;&nbsp;&nbsp;(For Betaflight or iNav, on the "Ports" page, enable LTM telemetry at 9600 baud.)
+
+
+## Other Notes
+
+Currently, the only supported telemetry parameters are:
+* Battery voltage
+* Latitude
+* Longitude
+* Ground speed
+* Heading
+* Altitude
+* GPS sat
+
+For some reason when the heading is displayed on my radio, it's divided by 10.  
+&nbsp;&nbsp;&nbsp;&nbsp;For example, a heading of 125º is displayed as 12.5º.
