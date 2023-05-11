@@ -15,7 +15,7 @@
 ////////////////////// PPM CONFIGURATION //////////////////////
 
 #define CHANNEL_NUMBER 12  //set the number of channels
-#define CHANNEL_DEFAULT_VALUE 0  //set the default servo value (0 means "no pulses" by default)
+#define CHANNEL_DEFAULT_VALUE 1000  //set the default servo value
 #define CHANNEL_FAILSAFE_VALUE 0  // failsafe mode is "no pules"
 #define FRAME_LENGTH 22500  //set the PPM frame length in microseconds (1ms = 1000µs)
 #define PULSE_LENGTH 300  //set the pulse length
@@ -267,7 +267,7 @@ void checkLTM() {
 
             /////////////////////////
 
-            crsf.queuePacket(CRSF_SYNC_BYTE, CRSF_FRAMETYPE_FLIGHT_MODE, &remoteData.flightmode, sizeof(remoteData.flightmode));  // TODO: Use 8 since remoteData.flightmode is a byte?
+            crsf.queuePacket(CRSF_SYNC_BYTE, CRSF_FRAMETYPE_FLIGHT_MODE, &remoteData.flightmode, sizeof(remoteData.flightmode));  // TODO: I don't think this is properly sending the flight mode. I think we need to use the strings in the flightModes array.
 
         }
 
